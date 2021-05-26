@@ -10,3 +10,6 @@ $(".burger-icon").click(function menuToggle() {
     $("#collapsedLinks").css("display", "flex");
   }
 });
+window.onresize = function () {
+  $("#collapsedLinks").css("display", "none");
+};

@@ -45,6 +45,9 @@ body {
   font-family: "Bebas Neue", cursive;
   font-size: 24px;
 }
+.nav-links:hover {
+  color: #000;
+}
 .burger {
   width: 30%;
   height: 100%;
@@ -76,6 +79,60 @@ body {
   background-color: #11290e;
   z-index: 2;
 }
+.container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.employer-statement {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", cursive;
+  color: #3e7a3a;
+}
+.employer-statement p {
+  text-align: center;
+  width: 60%;
+}
+.employee-questionaire {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+.employee-form {
+  height: 90%;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #11290e;
+}
+.employee-form input,
+.employee-form label {
+  width: 50%;
+}
+.employee-form button {
+  height: 50px;
+  width: 25%;
+  font-family: "Quicksand", sans-serif;
+  background-color: #3e7a3a;
+  cursor: pointer;
+}
+.employee-form button:hover {
+  background-color: #11290e;
+  transition-duration: 0.5s;
+}
+.employee-form button:active {
+  background-color: #000;
+}
 @media screen and (max-width: 992px) {
   .nav-link-menu {
     display: none;
@@ -92,5 +149,34 @@ body {
   }
   .nav-links {
     font-size: 12px;
+  }
+  .employee-form button {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .employer-statement {
+    height: 20%;
+    width: 100%;
+  }
+  .employer-statement p {
+    width: 95%;
+    font-size: 12px;
+  }
+  .employee-questionaire {
+    height: 80%;
+  }
+  .employee-form {
+    height: 95%;
+    width: 95%;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .employer-statement {
+    font-size: 20px;
+  }
+  .employee-form {
+    font-size: 20px;
   }
 }

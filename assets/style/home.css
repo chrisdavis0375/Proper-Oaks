@@ -92,7 +92,8 @@ body {
 }
 .content-container-1 {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 70vh;
   height: 30vh;
@@ -101,8 +102,7 @@ body {
   color: #ffffff;
   font-family: "Bebas Neue", cursive;
 }
-.statement,
-.purpose {
+.statement {
   height: 100%;
   width: 50%;
   display: flex;
@@ -121,22 +121,51 @@ body {
   height: 40%;
   font-family: "Quicksand", sans-serif;
 }
-.purpose h1 {
-  width: 40%;
-  height: 20%;
-  border-bottom: 2px solid #000;
+.jobs-container {
+  position: absolute;
+  top: 100vh;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
-.purpose p {
-  width: 50%;
-  height: 40%;
+.job-1,
+.job-3 {
+  width: 33%;
+  height: 100%;
+  background-color: #401a12;
+}
+.job-2 {
+  height: 100%;
+  width: 34%;
+  background-color: #401a12;
+}
+.job-1,
+.job-2,
+.job-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.job-1 p,
+.job-2 p,
+.job-3 p {
+  width: 80%;
   font-family: "Quicksand", sans-serif;
+}
+.job-icon {
+  height: 100px;
+  width: 100px;
 }
 .contact-container {
   width: 100%;
   height: 70vh;
   background-color: #3e7a3a;
   position: absolute;
-  top: 100vh;
+  top: 170vh;
   display: flex;
   flex-direction: row;
 }
@@ -198,6 +227,18 @@ body {
   .statement,
   .purpose {
     font-size: 12px;
+  }
+  .jobs-container {
+    flex-direction: column;
+  }
+  .job-1,
+  .job-3 {
+    height: 33.33%;
+    width: 100%;
+  }
+  .job-2 {
+    height: 33.33%;
+    width: 100%;
   }
   .contact-heading {
     font-size: 42px;

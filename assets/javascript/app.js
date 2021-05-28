@@ -6,13 +6,11 @@ $(document).ready(function () {
     document.getElementById("burger").classList.toggle("nav-button-color");
     if ($("#collapsedLinks").css("display") === "flex") {
       $("#collapsedLinks").css("display", "none");
-      console.log("bitch");
     } else {
       $("#collapsedLinks").css("display", "flex");
     }
   });
   window.onresize = function () {
     $("#collapsedLinks").css("display", "none");
-    console.log("Window");
   };
 });
